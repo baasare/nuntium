@@ -14,3 +14,4 @@ const String verificationViewRoute = 'verification';
 
 const String homeViewRoute = 'home';
 const String articleViewRoute = 'article';
+

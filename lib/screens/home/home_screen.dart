@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nuntium/screens/home/bookmark_screen.dart';
-import 'package:nuntium/screens/home/bulletin_screen.dart';
-import 'package:nuntium/screens/home/category_screen.dart';
+import 'package:nuntium/screens/home/bookmark/bookmark_screen.dart';
+import 'package:nuntium/screens/home/category/categories_screen.dart';
+import 'package:nuntium/screens/home/news/news_screen.dart';
 import 'package:nuntium/screens/home/profile/profile_screen.dart';
 import 'package:nuntium/utils/app_config.dart';
 import 'package:nuntium/utils/constants.dart';
@@ -33,7 +33,9 @@ class _HomeScreenState extends State<HomeScreen> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         currentIndex: 0,
+        elevation: 0.0,
         onTap: onTabTapped,
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Image(
@@ -78,8 +80,8 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       body: [
-        BulletinScreen(),
-        CategoryScreen(
+        NewsScreen(),
+        CategoriesScreen(
           scaffoldKey: _scaffoldKey,
         ),
         BookmarkScreen(

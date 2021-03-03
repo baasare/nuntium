@@ -4,6 +4,7 @@ import 'package:nuntium/utils/app_config.dart';
 import 'package:nuntium/utils/colors.dart';
 import 'package:nuntium/utils/constants.dart';
 import 'package:nuntium/widgets/custom_button.dart';
+import 'package:nuntium/widgets/list_items/category_grid_list_item.dart';
 
 class PreSettingScreen extends StatefulWidget {
   @override
@@ -100,7 +101,7 @@ class _PreSettingScreenState extends State<PreSettingScreen> {
         buttonWidth: SizeConfig.blockSizeHorizontal * 100,
         buttonOnPressed: () {
           Navigator.of(context).pushNamed(
-            verificationViewRoute,
+            homeViewRoute,
           );
         },
       ),
@@ -115,7 +116,8 @@ class _PreSettingScreenState extends State<PreSettingScreen> {
               top: SizeConfig.blockSizeVertical * 5,
               bottom: SizeConfig.blockSizeVertical * 5,
               left: SizeConfig.blockSizeHorizontal * 5,
-              right: SizeConfig.blockSizeHorizontal * 5),
+              right: SizeConfig.blockSizeHorizontal * 5,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -130,31 +132,3 @@ class _PreSettingScreenState extends State<PreSettingScreen> {
   }
 }
 
-class GridViewItem extends StatelessWidget {
-  final String _category;
-  final bool _isSelected;
-
-  GridViewItem(this._category, this._isSelected);
-
-  @override
-  Widget build(BuildContext context) {
-    return RawMaterialButton(
-      child: Text(
-        _category,
-        textAlign: TextAlign.left,
-        style: TextStyle(
-          fontFamily: AvailableFonts.primaryFont,
-          color: _isSelected ? Colors.white : greyDarker,
-          fontWeight: FontWeight.w500,
-          fontSize: 15,
-          letterSpacing: 0.5,
-        ),
-      ),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15.0),
-      ),
-      fillColor: _isSelected ? purplePrimary : greyLighter,
-      onPressed: null,
-    );
-  }
-}

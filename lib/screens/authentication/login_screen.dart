@@ -115,9 +115,9 @@ class _LoginScreenState extends State<LoginScreen> {
             buttonHeight: SizeConfig.blockSizeVertical * 6,
             buttonWidth: SizeConfig.blockSizeHorizontal * 100,
             buttonOnPressed: () {
-              // Navigator.of(context).pushNamed(
-              //   forgotPasswordRequestViewRoute,
-              // );
+              Navigator.of(context).pushNamed(
+                homeViewRoute,
+              );
             }
 
             // if (_formKey.currentState.validate()) {

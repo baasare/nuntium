@@ -40,7 +40,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     usernameFocusNode.dispose();
     passwordOneFocusNode.dispose();
     passwordTwoFocusNode.dispose();
-    ;
     super.dispose();
   }
 

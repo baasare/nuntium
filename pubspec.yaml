@@ -35,6 +35,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   flutter_icons: ^1.1.0
   provider: ^4.3.3
+  share: ^0.6.5+4
   intl: ^0.16.1
   http: ^0.12.2
 
@@ -56,6 +57,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/images/wallpapers/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -72,6 +74,7 @@ flutter:
     - family: SFProText
       fonts:
         - asset: fonts/SFProText-Regular.ttf
+          weight: 300
         - asset: fonts/SFProText-Medium.ttf
           weight: 500
         - asset: fonts/SFProText-SemiBold.ttf

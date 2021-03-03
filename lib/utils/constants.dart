@@ -64,6 +64,12 @@ class AvailableIcons {
     'assetImage': AssetImage('assets/images/googleLogo.png'),
     'assetPath': 'assets/images/googleLogo.png',
   };
+
+  static const bookmarkEmpty = {
+    'assetImage': AssetImage('assets/images/bookmarkEmpty.png'),
+    'assetPath': 'assets/images/bookmarkEmpty.png',
+  };
+
 }
 
 // Images
