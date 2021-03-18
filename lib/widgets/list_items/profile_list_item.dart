@@ -25,12 +25,7 @@ class ProfileListItem extends StatelessWidget {
         margin: EdgeInsets.only(
           bottom: SizeConfig.blockSizeVertical * 2,
         ),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(
-            Radius.circular(15.0),
-          ),
-          color: _isSelected ? purplePrimary : greyLighter,
-        ),
+        color: _isSelected ? purplePrimary : greyLighter,
         child: Text(
           _title,
           textAlign: TextAlign.left,
