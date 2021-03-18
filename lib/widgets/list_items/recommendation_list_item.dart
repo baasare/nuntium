@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'file:///C:/Users/User/Documents/Projects/nuntium/lib/screens/home/news/news_detail_screen.dart';
+import 'package:nuntium/screens/home/news/news_detail_screen.dart';
 import 'package:nuntium/utils/app_config.dart';
 import 'package:nuntium/utils/colors.dart';
 import 'package:nuntium/utils/constants.dart';
